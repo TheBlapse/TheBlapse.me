@@ -1,0 +1,20 @@
+{
+  "name": "theblapse-me",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@fontsource/league-spartan": "^4.5.13",
+    "astro": "^2.1.6"
+  },
+  "devDependencies": {
+    "@unocss/preset-wind": "^0.50.6",
+    "unocss": "^0.50.6"
+  }
+}
