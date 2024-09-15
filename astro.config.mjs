@@ -13,10 +13,13 @@ export default defineConfig({
     "/github": { destination: "https://github.com/theblapse", status: 302 },
     "/gh": { destination: "https://github.com/theblapse", status: 302 },
     "/lastfm": { destination: "https://last.fm/user/theblapse", status: 302 },
+    "/gr": { destination: "https://goodreads/theblapse", status: 302 },
+    "/goodreads": { destination: "https://goodreads/theblapse", status: 302 },
     "/discord": {
       destination: "https://discord.com/users/474929574304677898",
       status: 302,
     },
     "/telegram": { destination: "https://t.me/theblapse", status: 302 },
+    "/tg": { destination: "https://t.me/theblapse", status: 302 },
   },
 });
