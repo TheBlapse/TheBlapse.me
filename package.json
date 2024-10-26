@@ -11,11 +11,13 @@
   },
   "dependencies": {
     "@fontsource/league-spartan": "^4.5.13",
-    "@unocss/reset": "^0.62.3",
+    "@unocss/reset": "^0.62.4",
     "astro": "^2.10.15"
   },
   "devDependencies": {
     "@unocss/preset-wind": "^0.50.8",
+    "prettier": "^3.3.3",
+    "prettier-plugin-astro": "^0.14.1",
     "unocss": "^0.50.8"
   }
 }
