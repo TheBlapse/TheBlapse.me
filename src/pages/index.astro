@@ -1,5 +1,7 @@
 ---
 import "@fontsource/league-spartan";
+import "../components/cloud.astro";
+import Cloud from "../components/cloud.astro";
 ---
 
 <html lang="en">
@@ -10,21 +12,21 @@ import "@fontsource/league-spartan";
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="viewport" content="width=device-width" />
-    <meta name="title" content="Badal — TheBlapse" />
-    <meta name="description" content="Hello! I'm Badal." />
+    <meta name="title" content="Badal Panchani — TheBlapse" />
+    <meta name="description" content="Badal Panchani — TheBlapse" />
     <meta name="theme-color" content="#FFFBD7" />
     <meta name="apple-mobile-web-app-status-bar-style" content="#FFFBD7" />
     <meta property="og:type" content="website" />
     <meta name="keywords" content="Badal Panchani, TheBlapse, Badal" />
     <meta property="og:url" content="https://bad.al" />
     <meta property="og:title" content="Badal Panchani — TheBlapse" />
-    <meta property="og:description" content="Hello! I'm Badal." />
+    <meta property="og:description" content="Badal Panchani — TheBlapse" />
     <meta property="og:image" content="/android-chrome-192x192.png" />
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://theblapse.me" />
     <meta property="twitter:title" content="Badal Panchani — TheBlapse" />
-    <meta property="twitter:description" content="Hello! I'm Badal." />
+    <meta property="twitter:description" content="Badal Panchani — TheBlapse" />
     <meta property="twitter:image" content="/android-chrome-192x192.png" />
     <script
       defer
@@ -39,7 +41,7 @@ import "@fontsource/league-spartan";
         "url": "https://bad.al",
         "worksFor": {
           "@type": "Organization",
-          "name": "The Industrialist"
+          "name": "Himself"
         }
       }
     </script>
@@ -48,32 +50,16 @@ import "@fontsource/league-spartan";
   </head>
   <body class="bg-[#0D0D0D]">
     <div
-      class="flex flex-col justify-center m-0 border-t-4 border-[#FFFBD7] h-screen items-center text-[#FFFBD7] pattern"
+      class="flex flex-col justify-center items-center h-screen bg-gray-900 text-[#FFFBD7] pattern"
     >
-      <div>
+      <div class="text-center px-4 flex flex-col items-center gap-y-2">
+        <Cloud />
         <p
-          class="text text-[18px] font-medium md:text-[20px] leading-6 break-words p-4 w-[100vw] sm:w-[80vw] md:w-[70vw] lg:w-[50vw] justify-center text-justify"
+          class="text-xl md:text-3xl font-medium line-height-none sm:w-[80vw] md:w-[70vw] lg:w-[50vw] break-words"
         >
-          Welcome, Visitor!<br />I am Badal from Asiatic Lion&apos;s Den &mdash;
-          Gir, India. I am an <a
-            class="underline hover:opacity-60"
-            href="https://en.wikipedia.org/wiki/Unschooling"
-            target="_blank">unschooler</a
-          > on my 21st lap around the Sun; interviewing the industrialists
-          at <a
-            class="underline hover:opacity-60"
-            href="https://www.theindustrialist.org"
-            target="_blank">The Industrialist</a
-          >, learning & exploring at <a
-            class="underline hover:opacity-60"
-            href="https://wayfarers.space"
-            target="_blank">Wayfarers Space</a
-          >. You can find me as TheBlapse on
-          the Internet. Hey, you! Yes, YOU. Let's talk? Why not? Yes, just send
-          me a message because I can't, right? :)
+          strange internet cloud
         </p>
       </div>
-
       <div class="flex flex-row space-x-2 icons">
         <a href="https://x.com/theblapse" target="_blank">
           <span
@@ -110,24 +96,6 @@ import "@fontsource/league-spartan";
             >
           </span>
         </a>
-        <a href="https://github.com/theblapse" target="_blank">
-          <span
-            class="relative inline-block border-transparent border-2 2xl:border-3 border-rounded-full p-2 transition duration-150 icon ease-in-out hover:border-[#FFFBD7]"
-          >
-            <svg
-              viewBox="0 0 24 24"
-              class="w-[20px] md:w-[24px] h-[20px] md:h-[24px]"
-              stroke="currentColor"
-              stroke-width="2"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              ><path
-                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
-              ></path></svg
-            >
-          </span>
-        </a>
         <a href="https://goodreads.com/theblapse" target="_blank">
           <span
             class="relative inline-block border-transparent border-2 2xl:border-3 border-rounded-full p-2 transition duration-150 icon ease-in-out hover:border-[#FFFBD7]"
@@ -142,28 +110,6 @@ import "@fontsource/league-spartan";
               stroke-linejoin="round"
               ><path
                 d="M 25 2 C 20.459 2 16.58664 3.9082151 13.982422 6.9453125 C 11.378203 9.9824099 10 14.07975 10 18.5 C 10 22.92025 11.378203 27.017589 13.982422 30.054688 C 16.58664 33.091785 20.459 35 25 35 C 29.531588 35 33.395936 33.098395 36 30.072266 L 36 35 C 36 37.598543 35.181497 39.764071 33.548828 41.339844 C 31.91616 42.915616 29.363725 44 25.5 44 C 17.784314 44 15 39.933333 15 36 L 11 36 C 11 42.066667 16.215686 48 25.5 48 C 30.136275 48 33.83384 46.622274 36.326172 44.216797 C 38.818503 41.811319 40 38.476457 40 35 L 40 18.5 L 40 3 L 36 3 L 36 6.9277344 C 33.395936 3.9016049 29.531588 2 25 2 z M 25 6 C 28.459 6 31.08664 7.3379255 32.982422 9.5488281 C 34.878203 11.759731 36 14.91225 36 18.5 C 36 22.08775 34.878203 25.240269 32.982422 27.451172 C 31.08664 29.662074 28.459 31 25 31 C 21.541 31 18.91336 29.662074 17.017578 27.451172 C 15.121797 25.240269 14 22.08775 14 18.5 C 14 14.91225 15.121797 11.759731 17.017578 9.5488281 C 18.91336 7.3379255 21.541 6 25 6 z"
-              ></path></svg
-            >
-          </span>
-        </a>
-        <a href="https://last.fm/user/theblapse" target="_blank">
-          <span
-            class="relative inline-block border-transparent border-2 2xl:border-3 border-rounded-full p-2 transition duration-150 icon ease-in-out hover:border-[#FFFBD7]"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              shape-rendering="geometricPrecision"
-              text-rendering="geometricPrecision"
-              class="w-[20px] md:w-[24px] h-[20px] md:h-[24px]"
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              viewBox="0 0 512 512"
-              ><path
-                fill="#FFFBD7"
-                d="M256 0c141.385 0 256 114.615 256 256S397.385 512 256 512 0 397.385 0 256 114.615 0 256 0z"
-              ></path><path
-                fill="#0D0D0D"
-                d="M237.665 323.44l-11.421-30.947s-18.499 20.644-46.225 20.644c-24.587 0-41.999-21.356-41.999-55.513 0-43.742 22.071-59.393 43.743-59.393 31.297 0 41.255 20.272 49.818 46.236l11.42 35.549c11.415 34.519 32.776 62.255 94.284 62.255 44.109 0 74.035-13.536 74.035-49.092 0-28.813-16.385-43.743-46.971-50.903l-22.748-4.969c-15.658-3.572-20.271-9.958-20.271-20.646 0-12.078 9.591-19.241 25.248-19.241 17.101 0 26.326 6.427 27.72 21.729l35.554-4.249c-2.854-32.042-24.926-45.205-61.21-45.205-32.041 0-63.344 12.079-63.344 50.908 0 24.211 11.765 39.488 41.26 46.597l24.21 5.704c18.128 4.255 24.205 11.764 24.205 22.079 0 13.162-12.801 18.501-37.006 18.501-35.924 0-50.908-18.874-59.4-44.832l-11.765-35.55c-14.868-46.291-38.712-63.351-86.026-63.351-52.313 0-80.096 33.067-80.096 89.312 0 54.056 27.726 83.243 77.608 83.243 40.165 0 59.393-18.874 59.393-18.874l-.016.006v.002z"
               ></path></svg
             >
           </span>
@@ -192,7 +138,9 @@ import "@fontsource/league-spartan";
 </html>
 
 <style is:global>
-  .text {
+  .text,
+  html,
+  :root {
     font-family:
       "League Spartan",
       system-ui,
